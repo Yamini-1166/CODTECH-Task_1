@@ -7,6 +7,8 @@
 ## Overview of the project
 
 ### Project: QUIZ GAME
+![Screenshot 2024-11-14 193047](https://github.com/user-attachments/assets/b667fc83-f523-4743-af2f-d7888c574a27)
+
 
 ### OBJECTIVES:-
 The objective of this C code is to create a simple quiz game that presents multiple-choice questions to the user. The program tracks the user's score and provides immediate feedback based on their answers. It aims to test the user's knowledge on various topics through a series of predefined questions.
