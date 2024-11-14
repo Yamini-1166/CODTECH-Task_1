@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+// Function to display a question and get the user's answer
+char askQuestion(const char *question, const char *options[], char correctAnswer) {
+    char answer;
+    printf("%s\n", question);
+    for (int i = 0; i < 4; i++) {
+        printf("%c. %s\n", 'A' + i, options[i]);
+    }
+    printf("Your answer: ");
+    scanf(" %c", &answer);
+    return answer;
+}
+
+int main() {
+    int score = 0;
+    char answer;
+
+    // Question 1
+    const char *question1 = "What is the capital of France?";
+    const char *options1[] = {"Berlin", "Madrid", "Paris", "Rome"};
+    answer = askQuestion(question1, options1, 'C');
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is C. Paris\n");
+    }
+
+    // Question 2
+    const char *question2 = "Which planet is known as the Red Planet?";
+    const char *options2[] = {"Earth", "Mars", "Jupiter", "Saturn"};
+    answer = askQuestion(question2, options2, 'B');
+    if (answer == 'B' || answer == 'b') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is B. Mars\n");
+    }
+
+    // Question 3
+    const char *question3 = "Who wrote 'To Kill a Mockingbird'?";
+    const char *options3[] = {"Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"};
+    answer = askQuestion(question3, options3, 'A');
+    if (answer == 'A' || answer == 'a') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is A. Harper Lee\n");
+    }
+
+    // Display final score
+    printf("Your final score is: %d/3\n", score);
+
+    return 0;
+}
