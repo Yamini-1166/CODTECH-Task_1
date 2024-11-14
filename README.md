@@ -45,7 +45,7 @@ Header File: The program uses the standard input/output library, which provides 
 **3. Functions:**
 askQuestion Function: A custom function that displays a question, presents multiple-choice options, and captures the user's answer. This modular approach helps keep the code organized and reusable.
 
-4. Character Handling:
+**4. Character Handling:**
 User Input Handling: The program reads and processes characters from the user's input using scanf.
 
 **5. Control Structures:**
